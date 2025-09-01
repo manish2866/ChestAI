@@ -17,11 +17,6 @@ A minimal Streamlit app to classify chest X-rays as **Pneumonia: Positive** or *
    streamlit run app.py
    ```
 
-## Streamlit Community Cloud
-
-- Upload `app.py`, `requirements.txt`, and your model checkpoint file to the same repo.
-- Set the app entry point to `app.py`.
-
 ## Notes
 
 - The app tries to load either a full PyTorch model object or a `state_dict`. For a `state_dict`, it will build a reasonable backbone (ResNet18 by default, or inferred from filename) and attach a 1-unit head for binary classification.
